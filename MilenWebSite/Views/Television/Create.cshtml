@@ -1,0 +1,29 @@
+﻿
+@model TV
+
+<h1>Create TV</h1>
+
+<div>
+	<form asp-controller="Television"
+		  asp-action="Create"
+		  method="post">
+
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" class="form-control"
+				   id="name"
+				   name="name"
+				   value="TVto">
+		</div>
+		<div class="form-group">
+			<label for="image">Image</label>
+			<input type="text" class="form-control"
+				   id="image"
+				   name="image"
+				   value="https://images.samsung.com/is/image/samsung/my-uhdtv-ru7300-ua65ru7300kxxm-frontblack-155032168?$PD_GALLERY_L_JPG$">
+		</div>
+		
+		<button type="submit" class="btn btn-primary">Submit</button>
+
+	</form>
+</div>
